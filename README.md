@@ -9,6 +9,13 @@ A **Deep Learning–powered web application** for early and accurate detection o
 
 ---
 
+## 🚀 Demo
+
+🔗 [Live Demo](#) *(Add link if hosted)*  
+📽️ [Project Video](#) *(Optional - YouTube link or Drive)*  
+📊 [Model Performance Report](#) *(Optional - confusion matrix/accuracy chart)*
+
+---
 
 ## 🧠 Core Features
 
@@ -145,7 +152,11 @@ Used publicly available plant leaf datasets (e.g., PlantVillage) for training. P
 
 We welcome contributions! Please fork the repo and submit a PR. Follow the code structure and write clean, commented code.
 
+---
 
+## 🧾 License
+
+[MIT License](LICENSE)
 
 ---
 
@@ -158,9 +169,24 @@ We welcome contributions! Please fork the repo and submit a PR. Follow the code 
 
 ---
 
+## 💡 Authors
 
+👨‍💻 **Your Name**
+📧 [youremail@example.com](mailto:youremail@example.com)
+🔗 [LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourusername)
+
+---
 
 > *GreenVision is your smart companion in sustainable agriculture.* 🌿🌾🧠
 
 ```
 
+---
+
+Let me know if you want this README to include:
+- A `.env` guide for MongoDB connection.
+- Deployment steps (e.g., using Heroku or Docker).
+- Swagger API documentation for the backend.
+
+Would you like me to generate this in a downloadable file or as code blocks for GitHub directly?
+```
