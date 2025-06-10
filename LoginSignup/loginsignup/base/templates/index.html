@@ -1,0 +1,115 @@
+
+{% extends 'headerPage.html' %}
+
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+           
+            color: white;
+            margin-bottom: 200px;
+            background-color: rgba(0, 0, 0, 0.7); /* Example background color */
+            display: inline; /* Ensures the background color only covers the text */
+            padding: 15px;
+        }
+
+        form {
+            display: inline-block;
+            position:absolute;
+            top:40%;
+            left:20%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 0 auto 20px auto;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            background: white;
+            color: black;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        img {
+            position:absolute;
+            left:50%;
+            top:30%;
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        h4{
+            position:absolute;
+            top:70%;
+            left:50%;
+        }
+    </style>
+</head>
+<body id='bg' style="background-image:url('{% static 'img/gettyimages-1320011177-612x612.jpg' %}'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+    <div>
+        <h2>Upload Image for Plant Disease Classification</h2>
+        <form method="post" enctype="multipart/form-data" action="predictImage">
+            {% csrf_token %}
+            <label for="filePath">Upload Image File Here:</label>
+            <input name="filePath" type="file">
+            <input type="submit" value="Submit">
+        </form>
+        
+         <img src="{{ filePathName }}" alt="Uploaded Image">
+         <h4>Predicted class: {{predicted}}</h4>
+         {% comment %} <p>{{ filePathName }}</p>   {% endcomment %}
+       
+
+        {% comment %} {% if filePathName %}
+        <img src="{{ filePathName }}" alt="Uploaded Image">
+    {% endif %}
+    {% if predicted_class %}
+        <p>Predicted Class: {{ predicted_class }}</p>
+    {% endif %} {% endcomment %}
+    </div>
+</body>
+</html>
+{% endblock %}

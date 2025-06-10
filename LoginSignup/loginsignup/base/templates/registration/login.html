@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'img/style.css' %}">
+<body id='bg' style="background-image:url('{% static 'img/1078437.jpg'%}'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+</body>
+<div class="shadow-wrap">
+ <div class="form-wrap">
+  <h3>Login </h3>
+<form method="POST">
+ {% csrf_token %}
+ {{form}}
+ <button type="submit">Submit</button>
+</form>
+<a class="signup-link" href="{% url "base:authView" %}">Signup</a>
+</div>
+</div>
+{% endblock content %}a

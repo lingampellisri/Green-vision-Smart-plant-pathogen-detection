@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'img/style.css' %}">
+<body id='bg' style="background-image:url('{% static 'img/bg3.jpeg'%}');">
+    <center><font size=15 color="white">GREEN VISION<br>- Smart Plant Pathogen Detection<br></font>
+        <br><br>
+        <a href="accounts/login"><h1><button ><h1>Login</h1></button></h1><br></a>
+        <a class="signup-link" href="{% url "base:authView" %}"><button><h1>Signup</h1></button></h1></a>
+        </center>
+
+{% endblock content %}
