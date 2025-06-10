@@ -2,13 +2,6 @@
 
 A deep learning–powered web application for **early and accurate plant disease detection** using image analysis. Built with **Python**, **TensorFlow**, **CNN**, **OpenCV**, **Flask**, and **MongoDB**, this solution leverages AI to help farmers and agriculturalists detect crop infections from leaf images in real time.
 
----
-
-## 🚀 Live Demo
-
-🔗 **[Live Application](#)**  
-🎥 **[Demo Video](#)**  
-📊 **[Model Accuracy Report](#)**
 
 ---
 
@@ -78,9 +71,7 @@ Green-vision-Smart-plant-pathogen-detection/
 ├── requirements.txt
 └── .gitignore
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -107,9 +98,7 @@ source env/bin/activate  # On Windows use `env\Scripts\activate`
 # Install dependencies
 pip install -r requirements.txt
 ▶️ Run the App
-bash
-Copy
-Edit
+
 python app.py
 Go to: http://127.0.0.1:5000
 
@@ -152,9 +141,7 @@ Class balancing
 🤝 Contributing
 We welcome contributions from the open-source community!
 
-bash
-Copy
-Edit
+
 # Fork the repo
 # Create your branch: git checkout -b feature-name
 # Commit your changes: git commit -m 'Add new feature'
@@ -164,9 +151,9 @@ Edit
 This project is licensed under the MIT License.
 
 👨‍💻 Author
-Srinivas Lingampelli
-📧 youremail@example.com
-🔗 LinkedIn
-🔗 GitHub
+Navanitha Pothuganti
+📧 pothugantinavanithareddy29@gmail.com 
+🔗 linkedin.com/in/pothuganti-navanitha-73a119301
+🔗 github.com/PothugantiNavanitha 
 
 🌾 GreenVision: Empowering Agriculture with AI – One Leaf at a Time.
